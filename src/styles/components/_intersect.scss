@@ -1,0 +1,283 @@
+// INTERSECT GENERIC ELEMENTS
+
+.intersect-link {
+    cursor: pointer;
+    color: $color-primary;
+
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
+.intersect-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+// INTERSECT OPENER SECTION
+
+.intersect-opener {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.75), rgba($color-primary-dark, 1)), url(https://images.unsplash.com/photo-1523430237819-5fdfeb4f5604?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5314a7fa18a4ec6909d4cbda5687ada&auto=format&fit=crop&w=1537&q=80);
+    background-size: cover;
+}
+
+.intersect-opener-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100rem;
+    padding: 1rem;
+    text-align: center;
+    color: $color-white;
+    animation: fadeIn 1s;
+}
+
+.intersect-opener-images {
+    position: relative;    
+    height: 50rem;
+    width: 50rem;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/intersect-wireframes.png');
+    background-size: cover;
+
+    &--1 {
+        position: absolute;
+        bottom: -5rem;;
+        left: -15rem;;
+        height: 22rem;
+        width: 40rem;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/intersect-web-photo.png');
+        background-size: cover;
+    }
+
+    &--2 {
+        position: absolute;
+        bottom: -5rem;
+        right: -5rem;
+        height: 40rem;
+        width: 25rem;
+        border-radius: 0.5rem;
+        box-shadow: $box-shadow;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/intersect-photo.png');
+        background-size: cover;
+    }
+}
+
+.intersect-grid {
+    display: grid;
+    height: 100%;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    overflow: hidden;
+
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-rows: minmax(15rem, auto);
+    grid-gap: 2rem;
+}
+
+.intersect-cell {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid $color-primary;
+    box-shadow: $box-shadow;
+    text-align: center;
+}
+
+.intersect-cell-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35rem;
+
+    & h4 {
+        margin: 0;
+    }
+}
+
+.intersect-ideation-image {
+    height: 50rem;
+    width: 70rem;
+    margin: 5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    background-size: cover;
+
+    &--1 {
+        background-image: url('../assets/intersect-survey.png');
+    }
+
+    &--2 {
+        background-image: url('../assets/intersect-survey-2.png');
+    }
+
+    &--3 {
+        background-image: url('../assets/intersect-framework.png');
+    }
+
+    &--4 {
+        background-image: url('../assets/intersect-money-transfer.png');
+    }
+
+    &--5 {
+        background-image: url('../assets/intersect-revenue-streams.png');
+    }
+
+    &--6 {
+        height: 30rem;
+        background-image: url('../assets/intersect-wireframes-2.png');
+    }
+
+    &--7 {
+        height: 30rem;
+        background-image: url('../assets/intersect-wireframes-3.png');
+    }
+
+    &--8 {
+        height: 60rem;
+        background-image: url('../assets/intersect-wireframes.png');
+    }
+
+    &--9 {
+        position: relative;
+        width: 28rem;
+        background-image: url('../assets/intersect-photo-2.png');
+
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: 0.5rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                text-align: right;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                top: 4rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+
+            &--3 {
+                position: absolute;
+                top: 20rem;                
+                left: -2rem;
+                transform: translateX(-100%);  
+                text-align: right; 
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--4 {
+                position: absolute;
+                bottom: -2rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+        }
+    }
+
+    &--10 {
+        position: relative;
+        width: 28rem;
+        background-image: url('../assets/intersect-photo.png');
+
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: 0.5rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                top: 7rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+
+            &--3 {
+                position: absolute;
+                top: 29rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+        }
+    }
+
+    &--11 {
+        position: relative;        
+        width: 28rem;
+        background-image: url('../assets/intersect-photo-3.png');
+
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: 16rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                bottom: 9rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+        }
+    }
+}
+
+.intersect-development-image {
+    height: 50rem;
+    width: 70rem;
+    margin: 5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    background-size: cover;
+
+    &--1 {
+        background-image: url('../assets/intersect-pitch.png');
+    }
+
+    &--2 {
+        background-image: url('../assets/intersect-pitch-2.png');
+    }
+
+    &--3 {
+        background-image: url('../assets/intersect-pitch-3.png');
+    }
+}

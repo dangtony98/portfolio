@@ -1,0 +1,86 @@
+.projects-section {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.2));
+}
+
+.projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.projects-photo {
+    height: 50rem;
+    width: 50rem;
+    background-size: cover;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+
+    &--1 {
+        position: relative;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=828346ed697837ce808cae68d3ddc3cf&auto=format&fit=crop&w=1950&q=80');
+
+        &__showcase {
+            position: absolute;
+            bottom: -5rem;
+            right: -5rem;
+            height: 25rem;
+            width: 45rem;
+            border-radius: 0.5rem;
+            box-shadow: $box-shadow;
+            background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/ebse-photo.png');
+            background-size: cover;
+        }
+    }
+
+    &--2 {
+        position: relative;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('https://images.unsplash.com/photo-1523430237819-5fdfeb4f5604?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5314a7fa18a4ec6909d4cbda5687ada&auto=format&fit=crop&w=1537&q=80');
+
+        &__showcase {
+            position: absolute;
+            bottom: -5rem;
+            left: -5rem;
+            height: 40rem;
+            width: 25rem;
+            border-radius: 0.5rem;
+            box-shadow: $box-shadow;
+            background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/intersect-photo.png');
+            background-size: cover;
+        }
+    }
+
+    &--3 {
+        position: relative;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('https://images.unsplash.com/photo-1513528473392-f3fffb1b31a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44845c69fe4febae451d4133ccb7518b&auto=format&fit=crop&w=1950&q=80');
+
+        &__showcase {
+            position: absolute;
+            bottom: -5rem;
+            right: -5rem;
+            height: 25rem;
+            width: 45rem;
+            border-radius: 0.5rem;
+            box-shadow: $box-shadow;
+            background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/checkpoint-alpha-photo.png');
+            background-size: cover;
+        }
+    }
+}
+
+.projects-text {
+    text-align: center;
+    padding: 2rem;
+    width: 50rem;
+}
+
+.projects-link {
+    color: $color-black;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}

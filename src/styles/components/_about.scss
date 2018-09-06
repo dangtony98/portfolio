@@ -1,0 +1,26 @@
+.about-section {
+    height: auto;
+    width: 100%;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.about-text {
+    padding: 2rem;
+    width: 50rem;
+}
+
+.about-photo {
+    height: 50rem;
+    width: 50rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/about-photo.png');
+    background-size: cover;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+}

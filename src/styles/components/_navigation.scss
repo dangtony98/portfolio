@@ -1,0 +1,55 @@
+.navigation-bar {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5rem;
+    width: 100%;
+    padding: 1rem 10rem;
+    background-color: $color-primary;
+    opacity: 0.5;
+
+    transition: all 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.navigation-bar p {
+    color: $color-white;
+}
+
+.navigation-bar a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    font-weight: 400;
+    list-style: none;
+}
+
+.navigation-item {
+    cursor: pointer;    
+    transition: color 0.2s;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+
+    transition: all 0.2s;
+
+    &:hover {
+        border-bottom: 2px solid $color-white;
+    }
+}
+
+.navigation-item:not(:last-of-type) {
+    margin-right: 4rem;
+}
