@@ -8,7 +8,7 @@ export default () => {
             <div className="about-wrapper">
                 <div className="about-text">
                     <h2>Tuan (Tony) Dang</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    <p>I'm a sophomore studying at Cornell's School of Hotel Administration with an intended concentration in Finance, Accounting, and Real Estate (FARE) and a minor in computer science. I love the intersection of business and technology and possess a deep passion for software-related product design. My technical skillset lies in frontend web development, from wireframing with Adobe XD or Invision to developing applications with React/Redux; I also know Java and Python.</p>
                 </div>
                 <div className="about-photo">
                 </div>

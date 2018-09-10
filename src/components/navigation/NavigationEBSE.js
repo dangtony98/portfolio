@@ -10,7 +10,8 @@ export default () => {
                 <li className="navigation-item"><ScrollLink to="ebse-background" smooth={true} offset={-75} duration={1000}>Background</ScrollLink></li>
                 <li className="navigation-item"><ScrollLink to="ebse-toolbox" smooth={true} offset={-75} duration={1000}>Toolbox</ScrollLink></li>
                 <li className="navigation-item"><ScrollLink to="ebse-goal" smooth={true} offset={-75} duration={1000}>Goal</ScrollLink></li>
-                <li className="navigation-item"><ScrollLink to="ebse-development" smooth={true} offset={-75} duration={1000}>Development</ScrollLink></li>    
+                <li className="navigation-item"><ScrollLink to="ebse-development" smooth={true} offset={-75} duration={1000}>Development</ScrollLink></li>
+                <li className="navigation-item"><ScrollLink to="ebse-takeaways" smooth={true} offset={-75} duration={1000}>Takeaways</ScrollLink></li>    
             </ul>
         </div>
     );

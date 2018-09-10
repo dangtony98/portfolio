@@ -32,7 +32,7 @@ export default class EBSEPage extends Component {
                 />
                 <GenericSection 
                     title="&#45; Development &#45;" 
-                    text={["In this segment, I discuss my experience designing EBSE's frontend including the UI/UX thought processes and technical nuances encountered during implementation. Since my objective was to see how far I could go with my knowledge of React-Redux, I focused on functionality and code-optimization; as a product designer, however, I still had to ensure a quality interactive and visual experience."]}
+                    text={["In this segment, I discuss my experience designing EBSE's frontend including the UI/UX thought-processes and technical nuances encountered during implementation. Since my objective was to see how far I could go with my knowledge of React-Redux, I focused on functionality and code-optimization; as a product designer, however, I still had to ensure a quality interactive and visual experience."]}
                     sectionName="ebse-development"
                 />
                 <GenericSubSection
@@ -91,13 +91,14 @@ export default class EBSEPage extends Component {
                 <GenericSection 
                     title="&#45; What I Learned &#45;" 
                     text={["Creating a full-fledged, ecommerce frontend was a daunting task which taught me many valuable technical lessons. I outline a number of these below:"]}
-                    sectionName="ebse-learned"
+                    sectionName="ebse-takeaways"
                 />
                 <ul className="section-list">
-                    <li className="section-list-item"><strong>Ignore Short-Term Solutions</strong>: When designing the shopping cart algorithm, I XYZ.</li>
-                    <li className="section-list-item"><strong>Optimize for Reusability</strong>: When designing the shopping cart algorithm, I XYZ.</li>
-                    <li className="section-list-item"><strong>Take Advantage of NPM</strong>: When I first started building EBSE, I thought that I'd; little did I know that a myriad of sound, open-source components existed.</li>
+                    <li className="section-list-item"><strong>Build to Scale</strong>: When designing the initial product JSON-structure, I settled on a solution that didn't consider product customization and personalization. While this negligence worked for the Search Page, it further complicated my quest to deliver an interactive, customizable experience for the Product Page which required JSON duplication, alteration, and storage. How should I record the same but differently customized products in the shopping cart (in terms of JSON-representation and views)? This type of question had me puzzled for multiple hours as it concerned data structure and component rendering.</li>
+                    <li className="section-list-item"><strong>Don't Reinvent the Wheel</strong>: When I first started building EBSE, I designed every component from scratch. While this method was viable, it was not efficient and I'm glad to have transitioned to implementing ready-made components wherever applicable; there simply was no need to reinvent functional components that were already so well-polished. One example of an excellent, popular HOC component is Redux Form; with Redux-integration, Redux Form helped me track complex inputs within the Login/Signup Pages.</li>
+                    <li className="section-list-item"><strong>Stay Organized</strong>: Having built 3-4 smaller React projects prior to atttempting EBSE, I had little to no idea how to organize the project's file structure to maximize efficiency; this was significant because the project scaled to nearly 100 separate JSX and SaSS files. After conducting research and taking notes from online courses, I understood how to structure component, style, and processed files. If I hadn't done this, there'd be absolutely zero chance of achieving EBSE in time.</li>
                 </ul>
+                <p className="section-text">Please contact me for additional project inquiries!</p>
                 <Footer />
             </div>
         );

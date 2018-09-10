@@ -1,16 +1,17 @@
 import React from 'react';
 import ResumeHeading from './ResumeHeading';
+import ResumeTab from './ResumeTab';
 
 export default () => {
     return (
         <div>
             <ResumeHeading title="Education" />
-            <div className="resume-main">
-                <p className="resume-text"><strong>Cornell University</strong></p>
-                <p>Expected May 2021</p>
-            </div>
-            <p className="resume-text marg-l-sm">B.S. Hotel Administration & Information Science</p>
-            <p className="resume-text marg-l-sm">Concentrations in Finance, Interactive Technologies, and User Experience</p>
+            <ResumeTab
+                title="Cornell University"
+                position={['B.S. Hotel Administration', 'Concentration in Finance, Accounting, and Real Estate', 'Minor in Computer Science']}
+                date="Expected May 2021"
+                description={["Relevant Coursework: Finance, Object-Oriented Programming & Data Structures"]} 
+            />
         </div>
     );
 }

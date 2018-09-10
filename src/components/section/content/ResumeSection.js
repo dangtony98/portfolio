@@ -2,7 +2,7 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import ResumeEducation from '../../resume/ResumeEducation';
 import ResumeWork from '../../resume/ResumeWork';
-import ResumeTeam from '../../resume/ResumeTeam';
+import ResumeProjects from '../../resume/ResumeProjects';
 
 export default () => {
     return (
@@ -11,7 +11,7 @@ export default () => {
             <div className="resume">
                 <ResumeEducation />
                 <ResumeWork />
-                <ResumeTeam />
+                <ResumeProjects />
             </div>
         </div>
     );

@@ -11,7 +11,11 @@ export default ({ title, position, date, description }) => {
                 >{title}</Link>
                 <p>{date}</p>            
             </div>
-            <p className="resume-position marg-l-sm">{position}</p>
+            {position.map((text) => (
+                <div>
+                    <p className="resume-position marg-l-sm">{text}</p>
+                </div>
+            ))}
             <ul>
                 {description.map((text) => <li>{text}</li>)}
             </ul>

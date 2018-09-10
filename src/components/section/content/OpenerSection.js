@@ -7,7 +7,7 @@ export default () => {
             <NavigationBar />
             <div className="opener-box">
                 <h1 className="marg-b-sm">Building impactful products</h1>
-                <h2>Tony Dang</h2>
+                <h2>Tuan Dang</h2>
                 <div className="opener-icons">
                     <i class="opener-icon fab fa-instagram"></i>       
                     <i class="opener-icon fab fa-linkedin"></i>

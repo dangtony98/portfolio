@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import OpenerSection from '../section/content/OpenerSection';
-import ProjectsSection from '../section/content/ProjectsSection';
 import AboutSection from '../section/content/AboutSection';
+import OngoingSection from '../section/content/OngoingSection';
+import ProjectsSection from '../section/content/ProjectsSection';
 import ResumeSection from '../section/content/ResumeSection';
 import ContactSection from '../section/content/ContactSection';
 import Footer from '../footer/Footer';
@@ -15,7 +16,8 @@ export default class MainPage extends Component {
         return (
             <div>
                 <OpenerSection />
-                <AboutSection />            
+                <AboutSection />
+                <OngoingSection />            
                 <ProjectsSection />
                 <ResumeSection />
                 <ContactSection />
