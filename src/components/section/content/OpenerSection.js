@@ -9,9 +9,15 @@ export default () => {
                 <h1 className="marg-b-sm">Building impactful products</h1>
                 <h2>Tuan Dang</h2>
                 <div className="opener-icons">
-                    <i class="opener-icon fab fa-instagram"></i>       
-                    <i class="opener-icon fab fa-linkedin"></i>
-                    <i class="opener-icon fab fa-medium"></i>
+                    <a href="https://www.linkedin.com/in/tuan-d-a104a6125/">
+                        <i class="opener-icon fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/dangtony98">
+                        <i class="opener-icon fab fa-github"></i>
+                    </a>
+                    <a href="https://medium.com/@tonydang_47548">
+                        <i class="opener-icon fab fa-medium"></i>
+                    </a>
                 </div>
             </div>
         </div>

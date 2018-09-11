@@ -1,6 +1,29 @@
+.ongoing-section {
+    height: auto;
+    width: 100%;
+}
+
 .ongoing-text {
     padding: 2rem;
     width: 50rem;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 4rem auto;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 4rem auto;
+        width: 40rem;
+
+    }
+
+    @include mobile {
+        display: block;
+        margin: 4rem auto;
+        width: 40rem;
+    }
 }
 
 .ongoing-wrapper {
@@ -9,6 +32,18 @@
     justify-content: space-around;
     text-align: center;
     padding: 0 5rem;
+
+    @include tablet-landscape {
+        display: block;
+    }
+
+    @include tablet-portrait {
+        display: block;
+    }
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .ongoing-photo {
@@ -17,6 +52,23 @@
     height: 8rem;
     width: 8rem;
     background-size: cover;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 0 auto;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+    }
 
     &--1 {
         background-image: url('../assets/want_logo.png');

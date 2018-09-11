@@ -1,10 +1,22 @@
 .opener-section {
     display: block;
     position: relative;
-    height: 100vh;
+    height: 96rem;
     width: 100%;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.25), rgba($color-primary-dark, 0.5)), url(https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14dba03b77081bef7eb9ac400a5ad015&auto=format&fit=crop&w=1950&q=80);
     background-size: cover;
+
+    @include tablet-landscape {
+        height: 75rem;
+    }
+
+    @include tablet-portrait {
+        height: 65rem;
+    }
+
+    @include mobile {
+        height: 55rem;
+    }
 }
 
 .opener-box {

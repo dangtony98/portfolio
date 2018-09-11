@@ -7,7 +7,7 @@ import ResumeProjects from '../../resume/ResumeProjects';
 export default () => {
     return (
         <div className="resume-section">
-            <Element name="resume"><h2 className="section-header marg-b-l">&#45; Resume &#45;</h2></Element>
+            <Element name="resume"><h2 className="section-header">&#45; Resume &#45;</h2></Element>
             <div className="resume">
                 <ResumeEducation />
                 <ResumeWork />

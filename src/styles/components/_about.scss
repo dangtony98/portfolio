@@ -5,15 +5,43 @@
 
 .about-wrapper {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     padding: 0 5rem;
+
+    @include tablet-landscape {
+        display: block;
+    }
+
+    @include tablet-portrait {
+        display: block;
+    }
+
+    @include mobile {
+        display: block;
+    }
 }
 
 .about-text {
     padding: 2rem;
     width: 50rem;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .about-photo {
@@ -23,4 +51,23 @@
     background-size: cover;
     border-radius: 0.5rem;
     box-shadow: $box-shadow;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 0 auto;
+        height: 40rem;
+        width: 40rem;
+    }
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+        height: 40rem;
+        width: 40rem;
+    }
 }

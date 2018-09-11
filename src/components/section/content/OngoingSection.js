@@ -3,8 +3,8 @@ import { Element } from 'react-scroll';
 
 export default () => {
     return (
-        <div className="about-section marg-t-l marg-b-l">
-            <Element name="ongoing"><h2 className="section-header marg-b-l">&#45; Ongoing Projects &#45;</h2></Element>
+        <div className="ongoing-section marg-t-l marg-b-l">
+            <Element name="ongoing"><h2 className="section-header">&#45; Ongoing Projects &#45;</h2></Element>
             <div className="ongoing-wrapper">
                 <div className="ongoing-text">
                     <div className="ongoing-photo ongoing-photo--1"></div>

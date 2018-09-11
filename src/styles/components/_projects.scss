@@ -10,7 +10,35 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 10rem;
     padding: 0 5rem;
+
+    @include tablet-landscape {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    @include mobile {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    &--1 {
+
+    }
+
+    &--2 {
+        flex-direction: row-reverse;
+    }
+
+    &--3 {
+
+    }
 }
 
 .projects-photo {
@@ -19,6 +47,25 @@
     background-size: cover;
     border-radius: 0.5rem;
     box-shadow: $box-shadow;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 0 auto;
+        height: 40rem;
+        width: 40rem;
+    }
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+        height: 40rem;
+        width: 40rem;
+    }
 
     &--1 {
         position: relative;
@@ -34,6 +81,16 @@
             box-shadow: $box-shadow;
             background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/ebse-photo.png');
             background-size: cover;
+
+            @include tablet-portrait {
+                height: 20rem;
+                width: 36rem;
+            }
+        
+            @include mobile {
+                height: 20rem;
+                width: 36rem;
+            }
         }
     }
 
@@ -51,6 +108,16 @@
             box-shadow: $box-shadow;
             background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/intersect-photo.png');
             background-size: cover;
+
+            @include tablet-portrait {
+                height: 32rem;
+                width: 20rem;
+            }
+        
+            @include mobile {
+                height: 32rem;
+                width: 20rem;
+            }
         }
     }
 
@@ -68,6 +135,16 @@
             box-shadow: $box-shadow;
             background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.1)), url('../assets/checkpoint-alpha-photo.png');
             background-size: cover;
+
+            @include tablet-portrait {
+                height: 20rem;
+                width: 36rem;
+            }
+        
+            @include mobile {
+                height: 20rem;
+                width: 36rem;
+            }
         }
     }
 }
@@ -76,6 +153,24 @@
     text-align: center;
     padding: 2rem;
     width: 50rem;
+
+    @include tablet-landscape {
+        display: block;
+        margin: 2rem auto;
+        width: 40rem;
+    }
+
+    @include tablet-portrait {
+        display: block;
+        margin: 2rem auto;
+        width: 40rem;
+    }
+
+    @include mobile {
+        display: block;
+        margin: 2rem auto;
+        width: 40rem;
+    }
 }
 
 .projects-link {
