@@ -1,0 +1,196 @@
+// EBSE GENERIC ELEMENTS
+
+// EBSE OPENER SECTION
+
+.ebse-opener {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.75), rgba($color-primary-dark, 1)), url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=828346ed697837ce808cae68d3ddc3cf&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+}
+
+.ebse-opener-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100rem;
+    padding: 1rem;
+    text-align: center;
+    color: $color-white;
+    animation: fadeIn 1s;
+}
+
+.ebse-opener-images {
+    position: relative;    
+    height: 28rem;
+    width: 50rem;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-main.png');
+    background-size: cover;
+
+    &--1 {
+        position: absolute;
+        top: 5rem;;
+        left: 0;
+        transform: translateX(-55%);
+        height: 28rem;
+        width: 50rem;
+        z-index: -1;        
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-search.png');
+        background-size: cover;
+    }
+
+    &--2 {
+        position: absolute;
+        top: 5rem;;
+        right: 0;
+        transform: translateX(55%);
+        height: 28rem;
+        width: 50rem;
+        z-index: -1;        
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-product.png');
+        background-size: cover;
+    }
+}
+
+.ebse-development-image {
+    width: 50rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    background-size: cover;
+
+    &--1 {
+        position: relative;
+        height: 110rem;        
+        background-image: url('../assets/ebse-home-page.png');
+        
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: -2rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                top: 7rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+
+            &--3 {
+                position: absolute;
+                top: 22rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--4 {
+                position: absolute;
+                top: 29rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+
+            &--5 {
+                position: absolute;
+                top: 36rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--6 {
+                position: absolute;
+                bottom: 30rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+
+            &--7 {
+                position: absolute;
+                bottom: 1rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+        }
+    }
+
+    &--2 {
+        position: relative;
+        height: 84rem;        
+        background-image: url('../assets/ebse-search-page.png');    
+
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: 1rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                top: 30rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+        }
+    }
+
+    &--3 {
+        position: relative;
+        height: 57rem;        
+        background-image: url('../assets/ebse-product-page.png');
+        
+        &-caption {
+            &--1 {
+                position: absolute;
+                top: 7.5rem;
+                left: -2rem;
+                transform: translateX(-100%);
+                padding: 1rem;
+                border-right: 1px solid $color-primary;
+            }
+
+            &--2 {
+                position: absolute;
+                top: 12rem;
+                right: -2rem;
+                transform: translateX(100%);
+                padding: 1rem;
+                border-left: 1px solid $color-primary;
+            }
+        }
+    }
+}    

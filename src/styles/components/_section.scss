@@ -1,0 +1,32 @@
+.section-header {
+    text-align: center;
+}
+
+.section-text {
+    margin: 2rem auto;
+    text-align: left;
+    width: 50%;
+}
+
+.section-list {
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    list-style: none;    
+}
+
+.section-list-item {
+    margin: 2rem auto;
+    padding: 2rem;
+    border-left: 1px solid $color-primary;
+}
+
+.section-sub-heading {
+    margin-left: 10%;    
+}
+
+.section-caption {
+    max-width: 30rem;
+    background-color: rgba($color-primary, 0.1);
+    box-shadow: $box-shadow;
+}
