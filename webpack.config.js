@@ -28,12 +28,8 @@ module.exports = {
           }
         ]
     },
-<<<<<<< HEAD
     mode: 'production',
     devtool: 'source-map',
-=======
-    devtool: 'cheap-module-eval-source-map',
->>>>>>> ec991fc8b918f86679f4a85574db146206482c30
     devServer: {
         contentBase: path.join(__dirname, 'public')
     }
