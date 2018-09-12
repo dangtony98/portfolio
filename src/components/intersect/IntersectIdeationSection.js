@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import MediaQuery from 'react-responsive';
 import GenericSubSection from '../section/part/GenericSubSection';
 import IntersectIdeationCell from './IntersectIdeationCell';
 
@@ -64,10 +65,12 @@ export default () => {
             <p className="section-text">These were few of many product design decisions I had to make. Next, I'd like to showcase and explain my design thoughts for the application's key screens. Below each screen, I elaborate on its component composition.</p>
             <p className="section-text">Home Screen:</p>
             <div className="intersect-ideation-image intersect-ideation-image--9">
-                <p className="section-caption intersect-ideation-image--9-caption--1">Categories, Searchbar, Filters</p>
-                <p className="section-caption intersect-ideation-image--9-caption--2">Map/List Segmented Control</p>
-                <p className="section-caption intersect-ideation-image--9-caption--3">Merchant Map</p>
-                <p className="section-caption intersect-ideation-image--9-caption--4">Feed, Home, Profile Navigation</p>
+                <MediaQuery query="(min-width: 920px)">
+                    <p className="section-caption intersect-ideation-image--9-caption--1">Categories, Searchbar, Filters</p>
+                    <p className="section-caption intersect-ideation-image--9-caption--2">Map/List Segmented Control</p>
+                    <p className="section-caption intersect-ideation-image--9-caption--3">Merchant Map</p>
+                    <p className="section-caption intersect-ideation-image--9-caption--4">Feed, Home, Profile Navigation</p>
+                </MediaQuery>
             </div>
             <p className="section-text">The Home Screen informs users which nearby merchants accept the mobile wallet as a valid form of payment. Users can search and apply filters to identify specific merchants; they can also discover what merchants have to offer.</p>
             <ul className="section-list">
@@ -78,9 +81,11 @@ export default () => {
             </ul>            
             <p className="section-text">Profile Screen:</p>            
             <div className="section-caption intersect-ideation-image intersect-ideation-image--10">
-                <p className="section-caption intersect-ideation-image--10-caption--1">QR Code, Username, Settings</p>
-                <p className="section-caption intersect-ideation-image--10-caption--2">Profile Picture, Level</p>
-                <p className="section-caption intersect-ideation-image--10-caption--3">Purchase History Tabs</p>
+                <MediaQuery query="(min-width: 920px)">
+                    <p className="section-caption intersect-ideation-image--10-caption--1">QR Code, Username, Settings</p>
+                    <p className="section-caption intersect-ideation-image--10-caption--2">Profile Picture, Level</p>
+                    <p className="section-caption intersect-ideation-image--10-caption--3">Purchase History Tabs</p>
+                </MediaQuery>
             </div>
             <p className="section-text">The Profile Screen informs users about their past purchase history; it also grants users access to their identification QR code and application settings. The QR code exists to enable customer-merchant payment.</p>
             <ul className="section-list">
@@ -90,8 +95,10 @@ export default () => {
             </ul>
             <p className="section-text">Feed Screen:</p>
             <div className="intersect-ideation-image intersect-ideation-image--11">
-                <p className="section-caption intersect-ideation-image--11-caption--1">Prepaid Ticket Tabs</p>
-                <p className="section-caption intersect-ideation-image--11-caption--2">Newly Joined Notifications</p>
+                <MediaQuery query="(min-width: 920px)">
+                    <p className="section-caption intersect-ideation-image--11-caption--1">Prepaid Ticket Tabs</p>
+                    <p className="section-caption intersect-ideation-image--11-caption--2">Newly Joined Notifications</p>
+                </MediaQuery>
             </div>
             <p className="section-text">The Feed Screen was introduced as a space to store current state. Wheareas the Profile Screen informs users about the past, the Feed Screen deals with the present. What prepaid tickets do I have to redeem? What are local merchants announcing? These are all questions that this screen attempts to answer.</p>
             <ul className="section-list">

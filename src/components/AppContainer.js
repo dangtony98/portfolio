@@ -8,6 +8,7 @@ export default () => {
     return (
         <Router>
             <Switch>
+                <Route path="/" component={IntersectPage} exact />            
                 <Route path="/" component={MainPage} exact />            
                 <Route path="/ebse" component={EBSEPage} />
                 <Route path="/intersect" component={IntersectPage} />
