@@ -5,10 +5,22 @@
 .ebse-opener {
     display: block;
     position: relative;
-    height: 100vh;
+    height: 96rem;
     width: 100%;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.75), rgba($color-primary-dark, 1)), url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=828346ed697837ce808cae68d3ddc3cf&auto=format&fit=crop&w=1950&q=80);
     background-size: cover;
+
+    @include tablet-landscape {
+        height: 75rem;
+    }
+
+    @include tablet-portrait {
+        height: 65rem;
+    }
+
+    @include mobile {
+        height: 55rem;
+    }
 }
 
 .ebse-opener-box {
@@ -29,13 +41,28 @@
 }
 
 .ebse-opener-images {
-    position: relative;    
+    position: relative;
     height: 28rem;
     width: 50rem;
     box-shadow: $box-shadow;
     border-radius: 0.5rem;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-main.png');
     background-size: cover;
+
+    @include tablet-landscape {
+        height: 22.5rem;
+        width: 40rem;
+    }
+
+    @include tablet-portrait {
+        height: 22.5rem;
+        width: 40rem;
+    }
+
+    @include mobile {
+        height: 22.5rem;
+        width: 40rem;
+    }
 
     &--1 {
         position: absolute;
@@ -48,6 +75,21 @@
         border-radius: 0.5rem;
         background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-search.png');
         background-size: cover;
+
+        @include tablet-landscape {
+            height: 22.5rem;
+            width: 40rem;
+        }
+    
+        @include tablet-portrait {
+            height: 22.5rem;
+            width: 40rem;
+        }
+    
+        @include mobile {
+            height: 22.5rem;
+            width: 40rem;
+        }
     }
 
     &--2 {
@@ -61,11 +103,25 @@
         border-radius: 0.5rem;
         background-image: linear-gradient(to right bottom, rgba($color-primary, 0), rgba($color-primary-dark, 0.25)), url('../assets/ebse-product.png');
         background-size: cover;
+
+        @include tablet-landscape {
+            height: 22.5rem;
+            width: 40rem;
+        }
+    
+        @include tablet-portrait {
+            height: 22.5rem;
+            width: 40rem;
+        }
+    
+        @include mobile {
+            height: 22.5rem;
+            width: 40rem;
+        }
     }
 }
 
 .ebse-development-image {
-    width: 50rem;
     margin: 0 auto;
     border-radius: 0.5rem;
     box-shadow: $box-shadow;
@@ -73,8 +129,24 @@
 
     &--1 {
         position: relative;
-        height: 110rem;        
+        height: 110rem; 
+        width: 50rem;       
         background-image: url('../assets/ebse-home-page.png');
+
+        @include tablet-landscape {
+            height: 88rem;
+            width: 40rem;
+        }
+    
+        @include tablet-portrait {
+            height: 88rem;
+            width: 40rem;
+        }
+    
+        @include mobile {
+            height: 88rem;
+            width: 40rem;
+        }
         
         &-caption {
             &--1 {
@@ -144,8 +216,24 @@
 
     &--2 {
         position: relative;
-        height: 84rem;        
-        background-image: url('../assets/ebse-search-page.png');    
+        height: 84rem; 
+        width: 50rem;       
+        background-image: url('../assets/ebse-search-page.png');
+        
+        @include tablet-landscape {
+            height: 67.2rem;
+            width: 40rem;
+        }
+    
+        @include tablet-portrait {
+            height: 67.2rem;
+            width: 40rem;
+        }
+    
+        @include mobile {
+            height: 67.2rem;
+            width: 40rem;
+        }
 
         &-caption {
             &--1 {
@@ -170,8 +258,24 @@
 
     &--3 {
         position: relative;
-        height: 57rem;        
+        height: 57rem;   
+        width: 50rem;     
         background-image: url('../assets/ebse-product-page.png');
+
+        @include tablet-landscape {
+            height: 45.6rem;
+            width: 40rem;
+        }
+    
+        @include tablet-portrait {
+            height: 45.6rem;
+            width: 40rem;
+        }
+    
+        @include mobile {
+            height: 45.6rem;
+            width: 40rem;
+        }
         
         &-caption {
             &--1 {

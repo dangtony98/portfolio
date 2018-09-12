@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import EBSEOpenerSection from '../ebse/EBSEOpenerSection';
 import GenericSection from '../section/part/GenericSection';
 import GenericSubSection from '../section/part/GenericSubSection';
@@ -46,13 +47,15 @@ export default class EBSEPage extends Component {
                 />
                 <p className="section-text">Home Page</p>
                 <div className="ebse-development-image ebse-development-image--1">
-                    <p className="section-caption ebse-development-image--1-caption--1">Searchbar, Sign In, Categories</p>
-                    <p className="section-caption ebse-development-image--1-caption--2">Jumbotron Carousel</p>
-                    <p className="section-caption ebse-development-image--1-caption--3">Category Carousel</p>
-                    <p className="section-caption ebse-development-image--1-caption--4">Shopping Cart</p>
-                    <p className="section-caption ebse-development-image--1-caption--5">Product Carousel</p>
-                    <p className="section-caption ebse-development-image--1-caption--6">Categories Grid</p>
-                    <p className="section-caption ebse-development-image--1-caption--7">Footer</p>
+                    <MediaQuery query="(min-width: 920px)">
+                        <p className="section-caption ebse-development-image--1-caption--1">Searchbar, Sign In, Categories</p>
+                        <p className="section-caption ebse-development-image--1-caption--2">Jumbotron Carousel</p>
+                        <p className="section-caption ebse-development-image--1-caption--3">Category Carousel</p>
+                        <p className="section-caption ebse-development-image--1-caption--4">Shopping Cart</p>
+                        <p className="section-caption ebse-development-image--1-caption--5">Product Carousel</p>
+                        <p className="section-caption ebse-development-image--1-caption--6">Categories Grid</p>
+                        <p className="section-caption ebse-development-image--1-caption--7">Footer</p>
+                    </MediaQuery>
                 </div>
                 <p className="section-text">Creating the Home Page had its own nuances. I describe a few component creation-processes below:</p>
                 <ul className="section-list">
@@ -66,8 +69,10 @@ export default class EBSEPage extends Component {
                 />
                 <p className="section-text">Search Page</p>
                 <div className="ebse-development-image ebse-development-image--2">
-                    <p className="section-caption ebse-development-image--2-caption--1">Filters</p>
-                    <p className="section-caption ebse-development-image--2-caption--2">Search Results</p>
+                    <MediaQuery query="(min-width: 920px)">
+                        <p className="section-caption ebse-development-image--2-caption--1">Filters</p>
+                        <p className="section-caption ebse-development-image--2-caption--2">Search Results</p>
+                    </MediaQuery>
                 </div>
                 <p className="section-text">Although the Search Page was, in many aspects, similar to the Home Page, it presented two technical challenges: creating a functional, drop-down filter feature and a more-elaborate template for product tabs. I elaborate on these components below:</p>
                 <ul className="section-list">
@@ -80,8 +85,10 @@ export default class EBSEPage extends Component {
                 />
                 <p className="section-text">Product Page</p>
                 <div className="ebse-development-image ebse-development-image--3">
-                    <p className="section-caption ebse-development-image--3-caption--1">Product Image Perspectives</p>
-                    <p className="section-caption ebse-development-image--3-caption--2">Customization</p>
+                    <MediaQuery query="(min-width: 920px)">
+                        <p className="section-caption ebse-development-image--3-caption--1">Product Image Perspectives</p>
+                        <p className="section-caption ebse-development-image--3-caption--2">Customization</p>
+                    </MediaQuery>
                 </div>
                 <p className="section-text">I elaborate on two complexities of this page below:</p>
                 <ul className="section-list">

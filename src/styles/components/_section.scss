@@ -22,13 +22,37 @@
     margin: 2rem auto;
     text-align: left;
     width: 50%;
+
+    @include tablet-landscape {
+        width: 60%;
+    }
+
+    @include tablet-portrait {
+        width: 70%;
+    }
+
+    @include mobile {
+        width: 80%;
+    }
 }
 
 .section-list {
     margin: 0 auto;
     height: auto;
     width: 50%;
-    list-style: none;    
+    list-style: none;
+    
+    @include tablet-landscape {
+        width: 70%;
+    }
+
+    @include tablet-portrait {
+        width: 80%;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
 }
 
 .section-list-item {
