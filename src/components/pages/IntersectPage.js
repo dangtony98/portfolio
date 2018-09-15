@@ -30,7 +30,7 @@ export default class IntersectPage extends Component {
                     sectionName="intersect-solution"
                 />
                 <p className="section-text">Don't care for the process? 
-                    <ScrollLink to="intersect-wireframing" smooth={true} offset={-75} duration={1000}> <span className="intersect-link">Skip</span></ScrollLink> to wireframe showcase.</p>
+                    <ScrollLink to="intersect-wireframing" smooth={true} offset={-75} duration={1000}> <span className="section-link">Skip</span></ScrollLink> to wireframe showcase.</p>
                 <IntersectIdeationSection />
                 <GenericSection 
                     title="&#45; Development &#45;" 

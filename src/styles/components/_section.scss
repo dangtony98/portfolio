@@ -36,6 +36,15 @@
     }
 }
 
+.section-link {
+    cursor: pointer;
+    color: $color-primary;
+
+    &:hover {
+        color: $color-primary-dark;
+    }
+}
+
 .section-list {
     margin: 0 auto;
     height: auto;

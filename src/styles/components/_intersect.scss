@@ -1,14 +1,5 @@
 // INTERSECT GENERIC ELEMENTS
 
-.intersect-link {
-    cursor: pointer;
-    color: $color-primary;
-
-    &:hover {
-        color: $color-primary-dark;
-    }
-}
-
 .intersect-wrapper {
     display: flex;
     align-items: center;
@@ -22,7 +13,7 @@
 .intersect-opener {
     display: block;
     position: relative;
-    height: 100vh;
+    height: 96rem;
     width: 100%;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.75), rgba($color-primary-dark, 1)), url(https://images.unsplash.com/photo-1523430237819-5fdfeb4f5604?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5314a7fa18a4ec6909d4cbda5687ada&auto=format&fit=crop&w=1537&q=80);
     background-size: cover;
