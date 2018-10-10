@@ -8,8 +8,19 @@ import ContactSection from '../section/content/ContactSection';
 import Footer from '../footer/Footer';
 
 export default class MainPage extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onFormSubmit = this.onFormSubmit.bind(this);
+    }
+
     componentDidMount() {
         window.scrollTo(0, 0);
+    }
+    
+    onFormSubmit(values) {
+        console.log('Test');
+        console.log(values);
     }
 
     render() {
@@ -20,7 +31,7 @@ export default class MainPage extends Component {
                 <OngoingSection />            
                 <ProjectsSection />
                 <ResumeSection />
-                <ContactSection />
+                <ContactSection onSubmit={this.onFormSubmit} />
                 <Footer />
             </div>
         );
